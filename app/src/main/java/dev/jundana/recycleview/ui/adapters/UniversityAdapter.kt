@@ -47,6 +47,7 @@ class UniversityAdapter(list: ArrayList<Universities>) :
                 intent.putExtra("photoUniv", university.universityPhoto)
                 intent.putExtra("nameUniv", university.universityName)
                 intent.putExtra("infoUniv", university.universityInfo)
+                intent.putExtra("locationUniv", university.universityLocation)
                 itemView.getContext().startActivity(intent)
             }
         }

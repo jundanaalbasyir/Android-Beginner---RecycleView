@@ -14,6 +14,7 @@ class InfoUniversityActivity : AppCompatActivity() {
         val univPhoto = intent.getIntExtra("photoUniv", 0)
         val univName = intent.getStringExtra("nameUniv")
         val univInfo = intent.getStringExtra("infoUniv")
+        val univLocation = intent.getStringExtra("locationUniv")
 
         Glide.with(this)
             .load(univPhoto)
@@ -21,5 +22,6 @@ class InfoUniversityActivity : AppCompatActivity() {
 
         tv_univ_name.setText(univName)
         tv_univ_info.setText(univInfo)
+        tv_univ_location.setText(univLocation)
     }
 }
